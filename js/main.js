@@ -1,6 +1,6 @@
 // ===== Configuración =====
 // Número de WhatsApp con código de país, sin "+" ni espacios (ej: 5493511234567)
-const WHATSAPP = "5490000000000";
+const WHATSAPP = "5492612428328";
 const WHATSAPP_MSG = "¡Hola CyberData! Quiero hacer una consulta 🙂";
 
 document.getElementById("wa-link").href =

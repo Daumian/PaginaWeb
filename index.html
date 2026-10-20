@@ -7,7 +7,6 @@
   <meta name="description" content="Bases de datos para institutos, gimnasios y empresas. Posicionamiento en Google Maps y optimización de sistemas para negocios locales. Hacemos simple lo complejo.">
   <meta property="og:title" content="CyberData Soluciones">
   <meta property="og:description" content="Bases de datos, Google Maps y sistemas que trabajan por tu negocio.">
-  <meta property="og:image" content="img/cara.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -54,7 +53,42 @@
       </div>
       <div class="hero-photo">
         <div class="photo-frame">
-          <img src="img/cara.jpg" alt="Cara de CyberData Soluciones">
+          <svg class="hero-art" viewBox="0 0 360 450" role="img" aria-label="Ilustración de bases de datos conectadas a un mapa">
+            <defs>
+              <linearGradient id="gc" x1="0" x2="1"><stop offset="0" stop-color="#22e4ff"/><stop offset="1" stop-color="#3aa8ff"/></linearGradient>
+              <linearGradient id="gm" x1="0" x2="1"><stop offset="0" stop-color="#ff3ec8"/><stop offset="1" stop-color="#a64bff"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <!-- circuito -->
+            <g stroke="#22e4ff" stroke-opacity=".25" fill="none" stroke-width="1.5">
+              <path d="M0 80h70l20 20h60"/><path d="M360 60h-60l-20 20h-40"/>
+              <path d="M0 380h90l20-20h40"/><path d="M360 400h-80l-20-20h-30"/>
+              <circle cx="150" cy="100" r="3" fill="#22e4ff"/><circle cx="240" cy="80" r="3" fill="#22e4ff"/>
+              <circle cx="150" cy="360" r="3" fill="#ff3ec8"/><circle cx="230" cy="380" r="3" fill="#ff3ec8"/>
+            </g>
+            <!-- base de datos -->
+            <g filter="url(#glow)" fill="rgba(34,228,255,.08)" stroke="url(#gc)" stroke-width="2.5">
+              <path d="M110 150v40c0 14 32 26 70 26s70-12 70-26v-40"/>
+              <path d="M110 200v40c0 14 32 26 70 26s70-12 70-26v-40"/>
+              <path d="M110 250v40c0 14 32 26 70 26s70-12 70-26v-40"/>
+              <ellipse cx="180" cy="150" rx="70" ry="26"/>
+            </g>
+            <g fill="#22e4ff"><circle cx="225" cy="200" r="4"/><circle cx="225" cy="250" r="4"/><circle cx="225" cy="300" r="4" fill="#ff3ec8"/></g>
+            <g stroke="#22e4ff" stroke-opacity=".6" stroke-width="2"><path d="M130 200h50"/><path d="M130 250h35"/><path d="M130 300h60"/></g>
+            <!-- pin de mapa -->
+            <g filter="url(#glow)" transform="translate(255 40)">
+              <path d="M30 0c17 0 30 13 30 30 0 22-30 52-30 52S0 52 0 30C0 13 13 0 30 0z" fill="rgba(255,62,200,.12)" stroke="url(#gm)" stroke-width="2.5"/>
+              <circle cx="30" cy="30" r="10" fill="none" stroke="#ff3ec8" stroke-width="2.5"/>
+            </g>
+            <path d="M285 125c0 30-20 40-35 40" stroke="#ff3ec8" stroke-dasharray="4 6" stroke-width="2" fill="none"/>
+            <!-- mini gráfico -->
+            <g transform="translate(30 340)">
+              <rect width="120" height="80" rx="10" fill="rgba(11,18,34,.9)" stroke="#22e4ff" stroke-opacity=".4"/>
+              <polyline points="14,62 38,48 58,54 80,30 106,18" fill="none" stroke="url(#gc)" stroke-width="3" filter="url(#glow)"/>
+              <circle cx="106" cy="18" r="4" fill="#ff3ec8"/>
+            </g>
+            <path d="M150 380c30 0 30-40 30-60" stroke="#22e4ff" stroke-dasharray="4 6" stroke-width="2" fill="none" stroke-opacity=".6"/>
+          </svg>
           <span class="corner tl"></span><span class="corner br"></span>
         </div>
         <div class="chip chip-1">● Datos en orden</div>
@@ -125,8 +159,14 @@
 
     <!-- ===== NOSOTROS ===== -->
     <section class="section about" id="nosotros">
-      <div class="about-photo">
-        <img src="img/cara.jpg" alt="Equipo de CyberData Soluciones">
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar"><span></span><span></span><span></span><em>cyberdata.sh</em></div>
+<pre><span class="c">$</span> cyberdata --valores
+<span class="m">▸</span> hablar_claro      <span class="ok">[OK]</span>
+<span class="m">▸</span> datos_en_orden    <span class="ok">[OK]</span>
+<span class="m">▸</span> más_clientes      <span class="ok">[OK]</span>
+<span class="m">▸</span> acompañamiento    <span class="ok">[OK]</span>
+<span class="c">$</span> <span class="cursor">_</span></pre>
       </div>
       <div class="about-text">
         <p class="tag">// nosotros</p>
@@ -147,7 +187,7 @@
     <section class="section contact" id="contacto">
       <p class="tag">// contacto</p>
       <h2>¿Hablamos?</h2>
-      <p class="lead">Contanos qué necesitás y te respondemos a la brevedad.</p>
+      <p class="lead">Contanos qué necesitás por WhatsApp o Instagram y te respondemos a la brevedad.</p>
       <div class="contact-actions">
         <a class="btn" id="wa-link" href="#" target="_blank" rel="noopener">💬 Escribinos por WhatsApp</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/cyberdata.soluciones/" target="_blank" rel="noopener">📸 @cyberdata.soluciones</a>
